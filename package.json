@@ -1,0 +1,32 @@
+{
+  "name": "coding-exercise",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "seed": "ts-node scripts/seed-fhir.ts"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "@types/node": "^24.13.6",
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*",
+    "prettier": "^3.9.8",
+    "ts-node": "^10.9.2",
+    "turbo": "^2.11.2",
+    "typescript": "5.9.3"
+  },
+  "packageManager": "pnpm@10.34.5",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@types/fhir": "^0.0.44",
+    "@types/pg": "^8.23.1",
+    "axios": "^1.20.0",
+    "pg": "^8.23.0"
+  }
+}
